@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="HTML, CSS" />
+    <title>My first web page</title>
+    <meta name="description" content="" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- about -->
+    <div class="about">
+      <a class="bg_links social portfolio" href="https://www.google.com/" target="_blank">
+        <span class="icon"></span>
+      </a>
+      <a class="bg_links social github" href="https://github.com/Sadab-Wasi" target="_blank">
+        <span class="icon"></span>
+      </a>
+      <a
+        class="bg_links social linkedin"
+        href="http://www.linkedin.com/in/sadab-w-57815916b"
+        target="_blank"
+      >
+        <span class="icon"></span>
+      </a>
+      <a class="bg_links logo"></a>
+    </div>
+    <!-- end about -->
+
+    <!-- Nav -->
+    <nav class="nav flex-row">
+      <a class="nav__brand" href="/">
+        <!-- <img src="./images/logo.svg" alt="" /> -->
+        Sadab Wasi Ullah
+      </a>
+      <svg class="icon icon--color nav__toggler">
+        <use class="icon-open" href="./images/svg/door-close-2-icon.svg"></use>
+        <use class="icon-exit" href="./images/svg/door-exit-icon.svg"></use>
+      </svg>
+      <ul class="list nav__content flex-row">
+        <li class="nav__item"><a href="#home">Profile</a></li>
+        <li class="nav__item"><a href="#top">Top</a></li>
+        <li class="nav__item"><a href="#projects">Projects</a></li>
+        <li class="nav__item"><a href="#info">Experience</a></li>
+      </ul>
+    </nav>
+    <!-- END - Nav -->
+    <header class="hero__banner" id="home">
+      <div class="hero__wrapper">
+        <article class="hero__content reveal">
+          <h1>Full Stack Developer</h1>
+          <p>
+            I’m a versatile Full Stack Developer with a strong background in full-stack development,
+            IoT solutions, and WebOps. With over four years of experience, I specialize in building
+            scalable applications, developing REST and GraphQL APIs, and optimizing systems for
+            performance and efficiency. I’ve recently expanded my expertise into React and modern
+            frontend development through hands-on projects. I have a proven ability to bridge
+            development and operations, delivering user-focused solutions that align with business
+            goals.
+          </p>
+        </article>
+        <figure class="hero__image reveal" aria-label="dummy project">
+          <img src="./images/webp/project showcase.webp" alt="" />
+        </figure>
+      </div>
+    </header>
+
+    <h2 id="top">Top Previews</h2>
+    <section class="preview-latest">
+      <div id="top_preview" class="preview__wrapper reveal">
+        <article class="preview__content">
+          <h3 class="preview__topic">Topic 1</h3>
+          <a href="" class="btn btn--default preview__link">Button</a>
+          <img src="./images/webp/default picture.webp" alt="" />
+        </article>
+        <article class="preview__content">
+          <h3 class="preview__topic">Topic 2</h3>
+          <a href="" class="btn btn--default preview__link">Button</a>
+          <img src="./images/webp/default picture.webp" alt="" />
+        </article>
+        <article class="preview__content">
+          <h3 class="preview__topic">Topic 3</h3>
+          <a href="" class="btn btn--default preview__link">Button</a>
+          <img src="./images/webp/default picture.webp" alt="" />
+        </article>
+        <article class="preview__content">
+          <h3 class="preview__topic">Topic 4</h3>
+          <a href="" class="btn btn--default preview__link">Button</a>
+          <img src="./images/webp/default picture.webp" alt="" />
+        </article>
+      </div>
+    </section>
+
+    <h2 id="projects">All Projects</h2>
+    <section class="projects__wrapper reveal">
+      <ul id="projects_tags" class="projects_tags">
+        <li class="tag checked" data-tag="all">all</li>
+        <li class="tag" data-tag="HTML">HTML</li>
+        <li class="tag" data-tag="CSS">CSS</li>
+        <li class="tag" data-tag="JS">JS</li>
+        <li class="tag" data-tag="Express">Express</li>
+        <li class="tag" data-tag="React">React</li>
+        <li class="tag" data-tag="Sequelize">Sequelize</li>
+        <li class="tag" data-tag="Tailwind">Tailwind</li>
+        <li class="tag" data-tag="TypeScript">TypeScript</li>
+        <li class="tag" data-tag="GraphQL">GraphQL</li>
+        <li class="tag" data-tag="UnitTest">UnitTest</li>
+        <li class="tag" data-tag="Spreadsheet">Spreadsheet</li>
+        <li class="tag" data-tag="Power_BI">Power_BI</li>
+      </ul>
+
+      <div class="project__container">
+        <div class="slider" id="project__slider">
+          <div class="page" id="page-1">
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 0</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 1</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 2</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 3</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <!-- <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 4</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article> -->
+          </div>
+          <div class="page" id="page-2">
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 5</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 6</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 7</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 8</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <!-- <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 9</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article> -->
+          </div>
+          <div class="page" id="page-3">
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 10</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 11</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 12</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 13</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <!-- <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 14</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article> -->
+          </div>
+          <div class="page" id="page-4">
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 15</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 16</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 17</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 18</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article>
+            <!-- <article class="card">
+              <div class="card__img">
+                <img src="./images/webp/default picture.webp" alt="" />
+                <span class="card__img-overlay"><a href="">Preview</a></span>
+              </div>
+              <h3 class="card__name">Project 19</h3>
+              <ul class="card__tags">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+              </ul>
+            </article> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button id="page-first" class="p-icon">&laquo;</button>
+        <button id="page-prev" class="p-icon">&lsaquo;</button>
+        <div id="page-numbers" class="nums">
+          <button onclick="goToPage(1)" class="num active">1</button>
+          <button onclick="goToPage(2)" class="num">2</button>
+          <button onclick="goToPage(3)" class="num">3</button>
+          <button onclick="goToPage(4)" class="num">4</button>
+          <button onclick="goToPage(5)" class="num">5</button>
+        </div>
+        <button id="page-next" class="p-icon">&rsaquo;</button>
+        <button id="page-last" class="p-icon">&raquo;</button>
+      </div>
+    </section>
+
+    <h2 id="info">Experience Summary</h2>
+    <section class="info reveal">
+      <p>
+        I have a results-driven professional experience with over four years in full-stack
+        development, IoT solutions, and CRM WebOps. I began as a Full Stack Developer at Dynamics
+        Motion, building scalable applications and developing REST and GraphQL APIs using
+        JavaScript. I later worked as a CRM WebOps Strategist at HubXpert, specializing in HubSpot
+        automation, workflow optimization, and client-focused solutions. With additional experience
+        as a CRM DevOps Specialist, I have streamlined processes and improved system efficiency. I
+        excel at bridging development and operations while delivering scalable, efficient, and
+        user-focused technical solutions aligned with business goals.
+      </p>
+    </section>
+
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
