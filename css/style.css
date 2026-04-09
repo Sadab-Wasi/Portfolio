@@ -24,6 +24,29 @@
   --color-black: #000;
 }
 
+/* ------------ Theme Dark ------------ */
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #00d9fe; /* 4a9eff */
+    --color-secondary: #2584fe; /* 70eaff */
+    --color-accent: #ffb08a; /* ffb08a */
+
+    --color-background: #141b2d; /* 0f172a */
+    --color-background2: #accbee; /* 1e293b */
+    --color-background3: #e7f0fe; /* f1f5f9 */
+    --color-body: #9197ae; /* 94a3b8 */
+    --color-bodylight: #637499; /* 64748b */
+    --color-headings: #265afb; /* e2e8f0 */
+    --color-highlights: #3b9ff2; /* 60a5fa */
+
+    --color-white: #000;
+    --color-black: #fff;
+  }
+}
+
+/* End - Theme Dark */
+
 *,
 *::before,
 *::after {
@@ -137,6 +160,11 @@ nav {
   color: var(--color-black);
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  h3 {
+    color: var(--color-highlights);
+  }
+}
 /* --- Buttons --- */
 .btn {
   border-radius: 40px;
@@ -156,6 +184,11 @@ nav {
 }
 .btn--default:hover {
   background: var(--color-background2);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .btn--default:hover {
+    color: var(--color-background);
+  }
 }
 
 /* --- Others --- */
@@ -183,18 +216,18 @@ nav {
 .about {
   position: fixed;
   z-index: 10;
-  bottom: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
+  bottom: 2rem;
+  right: 2rem;
+  width: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   transition: all 0.2s ease;
 }
 .about .bg_links {
-  width: 40px;
-  height: 40px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -205,8 +238,8 @@ nav {
   position: absolute;
 }
 .about .logo {
-  width: 40px;
-  height: 40px;
+  /* width: 40px;
+  height: 40px; */
   z-index: 9;
   background-image: url(../images/webp/profile.webp);
   background-size: 100%;
@@ -225,7 +258,7 @@ nav {
 .about .social .icon {
   width: 100%;
   height: 100%;
-  background-size: 20px;
+  background-size: 3rem;
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -255,8 +288,8 @@ nav {
   background-image: url(../images/svg/linkedin-icon.svg);
 }
 .about:hover {
-  width: 105px;
-  height: 105px;
+  width: 15.75rem;
+  height: 15.75rem;
   transition: all 0.6s cubic-bezier(0.64, 0.01, 0.07, 1.65);
 }
 .about:hover .logo {
@@ -271,7 +304,7 @@ nav {
   opacity: 0.9;
 }
 .about:hover .social:hover {
-  background-size: 28px;
+  background-size: 4.2rem;
 }
 .about:hover .social:hover .icon {
   background-size: 65%;
@@ -279,7 +312,7 @@ nav {
 }
 .about:hover .social.portfolio {
   right: 0;
-  bottom: calc(100% - 40px);
+  bottom: calc(100% - 6rem);
   transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
 }
 .about:hover .social.portfolio .icon:hover {
@@ -295,11 +328,21 @@ nav {
 }
 .about:hover .social.linkedin {
   bottom: 0;
-  right: calc(100% - 40px);
+  right: calc(100% - 6rem);
   transition: all 0.3s 0.25s cubic-bezier(0.64, 0.01, 0.07, 1.65);
 }
 .about:hover .social.linkedin .icon:hover {
   background-color: var(--color-headings); /* #0077b5 */
+}
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (prefers-color-scheme: dark) {
+  .about:hover .social.portfolio .icon:hover,
+  .about:hover .social.github .icon:hover,
+  .about:hover .social.linkedin .icon:hover {
+    background-color: var(--color-black);
+  }
 }
 
 /* End - About */
@@ -330,6 +373,7 @@ nav {
   transform: translateY(0px);
 }
 .nav__item:hover {
+  padding: 0 1rem;
   transform: translateY(-5px);
   box-shadow: inset 0px -20px 0px white;
 }
@@ -392,6 +436,16 @@ nav {
   .collapsible__extended .nav__content {
     max-width: 100vw;
     opacity: 1;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .nav__item {
+    color: var(--color-background2);
+    box-shadow: inset 0px -10px 0px rgba(255, 255, 255, 0.2);
+  }
+  .nav__item:hover {
+    color: var(--color-background2);
+    box-shadow: inset 0px -20px 0px rgba(255, 255, 255, 0.2);
   }
 }
 /* End - Nav menu */
@@ -476,6 +530,11 @@ nav {
     height: 40rem;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .hero__content {
+    color: var(--color-white);
+  }
+}
 /* End - Hero Banner */
 
 /* ------------ Latest ------------ */
@@ -538,7 +597,7 @@ nav {
 }
 .preview__content:hover > h3,
 .preview__content:hover > a {
-  opacity: 2;
+  opacity: 1;
 }
 
 .preview__content > img {
@@ -572,6 +631,8 @@ nav {
   .active.preview__wrapper > * {
     transform: translateY(0vw);
   } */
+}
+@media screen and (prefers-color-scheme: dark) {
 }
 /* End - Latest */
 
@@ -775,11 +836,13 @@ nav {
 }
 .p-icon:hover,
 .num:hover {
+  color: var(--color-background);
   background: var(--color-background2);
 }
 .num.active {
+  color: var(--color-background);
   background: #9fa8da;
-  border: 2px solid var(--accent-blue);
+  /* border: 2px solid var(--accent-blue); */
 }
 
 @media screen and (max-width: 768px) {
@@ -817,6 +880,22 @@ nav {
     gap: initial;
   }
 }
+@media screen and (prefers-color-scheme: dark) {
+  .projects_tags li:hover {
+    background-color: #ffffff20;
+  }
+  .projects_tags li.checked {
+    border: 2px solid var(--color-primary);
+    background-color: #ffffff30;
+  }
+  .p-icon:hover,
+  .num:hover {
+    color: var(--color-background);
+  }
+  .num.active {
+    color: var(--color-background);
+  }
+}
 
 /* End - Projects */
 
@@ -839,7 +918,7 @@ nav {
   bottom: 0rem;
 }
 
-/* End - Info */
+/* End - Projects */
 
 /* ---------------------- */
 /* Dynamic Multiple screens */
