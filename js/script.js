@@ -50,6 +50,13 @@ const all_projects = [
     top: true,
   },
   {
+    name: "Simipifly",
+    "link-live": "https://simipifly.vercel.app/",
+    img: "https://raw.githubusercontent.com/Sadab-Wasi/Simipifly/main/preview/desktop.png",
+    tags: ["CSS", "HTML", "JS"],
+    top: true,
+  },
+  {
     name: "Book Rental Request",
     "link-live":
       "https://drive.google.com/drive/folders/18XdxeO41n5WMxPcj903idsTjkE-grbPn?usp=sharing",
